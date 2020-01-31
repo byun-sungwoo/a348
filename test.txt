@@ -1,0 +1,15 @@
+Try conv on this file to see how it works
+To run and see the output, just type:
+perl conv.pl test.txt
+
+1: test ‘ ’ “ ”
+
+12: test ‘ ’ “ ”
+
+123: test ‘ ’ “ ”
+
+123:  test ‘ ’ “ ”
+
+ 123: test ‘ ’ “ ”
+
+123 : test ‘ ’ “ ”
