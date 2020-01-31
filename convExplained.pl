@@ -19,6 +19,7 @@ while($line = <AB>) {		# get next line in file AB and set it to variable "line"
 	# find		- is a pattern you want to remove. It can be anything.
 	# replace	- is a pattern you want to replace "find" with. It can be anything.
 	# g		- means to target globally, so all instances
+	
 	$line =~ s/^\d+:\s//g;	# delete number followed by a colon at the begining of current line if it exists
 	# ^	- means beginning of a line
 	# /d	- means digit through 0-9
@@ -26,6 +27,7 @@ while($line = <AB>) {		# get next line in file AB and set it to variable "line"
 	# :	- is just the character ":", doesn't mean anything special
 	# /s	- means the space character
 	# the reason why the "replace" pattern has nothing is so we can delete by replacing with nothing
+	
 	$line =~ s/‘/'/g;	# replace weird single quotes with normal single quotes in current line
 	$line =~ s/’/'/g;	# replace weird single quotes with normal single quotes in current line
 	$line =~ s/“/"/g;	# replace weird double quotes with normal double quotes in current line
