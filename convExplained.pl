@@ -1,8 +1,10 @@
 #!/usr/bin/perl
 
-# To use this. You need to run it on a file and output the 
+# To use this you need to run it and redirect the output to another file
 # Example:
 # perl conv.pl file.txt > output.txt
+# If you make conv.pl executable
+# ./conv.pl file.txt > output.txt
 
 # Explanation:
 # perl		- is to compile perl files
@@ -22,6 +24,7 @@ while($line = <AB>) {		# get next line in file AB and set it to variable "line"
 	# /d	- means digit through 0-9
 	# /d+	- means number, so while /d will find 123, it will treat each digit as a separate find
 	# :	- is just the character ":", doesn't mean anything special
+	# /s	- means the space character
 	# the reason why the "replace" pattern has nothing is so we can delete by replacing with nothing
 	$line =~ s/‘/'/g;	# replace weird single quotes with normal single quotes in current line
 	$line =~ s/’/'/g;	# replace weird single quotes with normal single quotes in current line
