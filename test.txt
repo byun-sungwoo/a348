@@ -1,7 +1,7 @@
 Try conv on this file to see how it works
 To run and see the output, just type:
 perl conv.pl test.txt
-if conv.pl is executable:
+If conv.pl is executable:
 ./conv.pl test.txt
 
 1: test ‘ ’ “ ”
