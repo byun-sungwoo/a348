@@ -1,0 +1,15 @@
+There are many ways to keep processes running in the background and I
+personally use tmux, but I think the 'screen' command is more than enough.
+
+# When out of a session
+screen -ls		// list out current sessions
+
+screen			// start new session, this generates a random number as the session name
+screen -r 19102		// reattach to session 19102
+
+screen -S hello		// start new session called hello
+screen -r hello		// reattach to session hello
+
+# When in a session
+C-a + C+d		// detach from session
+C+d			// kill current session
