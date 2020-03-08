@@ -22,10 +22,10 @@ while($line = <AB>) {		# get next line in file AB and set it to variable "line"
 	
 	$line =~ s/^\d+:\s//g;	# delete number followed by a colon at the begining of current line if it exists
 	# ^	- means beginning of a line
-	# /d	- means digit through 0-9
-	# /d+	- means number, so while /d will find 123, it will treat each digit as a separate find
+	# \d	- means digit through 0-9
+	# \d+	- means number, so while /d will find 123, it will treat each digit as a separate find
 	# :	- is just the character ":", doesn't mean anything special
-	# /s	- means the space character
+	# \s	- means the space character
 	# the reason why the "replace" pattern has nothing is so we can delete by replacing with nothing
 	
 	$line =~ s/‘/'/g;	# replace weird single quotes with normal single quotes in current line
